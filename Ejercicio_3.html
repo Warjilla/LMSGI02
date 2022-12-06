@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- formulario que realice una petición de reserva de un hotel  -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>reserva de hotel </title>
+    <style type="text/css">
+        /* img {
+            display: flex;
+            justify-content: center;
+        } */
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h2> HAGA SU RESERVA</h2>
+    <fieldset>
+        <legend> datos de cliente </legend>
+        <!-- meto un cuadro que engloba los datos del cliente y le añado un titulo -->
+        <form>
+            <ul>
+                <!--meto una lista porque la informacion no quedaba ordenada. cada una de las cajas sale a continuacion de la siguiente -->
+                <li>
+                    <label for="nombre"> nombre:</label> <!-- etiqueta para nombre de la caja siguiente -->
+                    <input type="text" name="nombre" size="20" placeholder="escriba su nombre">
+                </li>
+                <li>
+                    <label for="apellidos"> apellidos:</label>
+                    <input type="text" name="apellidos" size="50 " placeholder="escriba sus apellidos">
+                    <!-- aumento el tamaño de catacteres para que quepan dos apellidos -->
+                </li>
+                <li>
+                    <label for="telefono"> telefono de contacto:</label>
+                    <input type="text" name="telefono" size="9" placeholder="escriba su telefono">
+                    <!-- reduzco el tamaño de catacteres para que solo quepan los 9 digitos de un telefono -->
+                </li>
+                <li>
+                    <label for="email"> correo electronico:</label>
+                    <input type="text" name="email" size="50" placeholder="escriba su correo electronico">
+                </li>
+                <li>
+                    <label for="noches"> numero de noches:</label>
+                    <input type="text" name="noches" placeholder="escriba el numero de noches">
+                </li>
+            </ul>
+    </fieldset>
+    <img src="./img/sopa-cebolla.jpg" alt="Descripción de la imagen" class="center">
+    </form>
+    <!-- introduccione de las fechas de entrada -->
+    <fieldset>
+        <legend> datos de reserva </legend>
+        <!-- meto un cuadro que engloba los datos de reserva y le añado un titulo -->
+        <form>
+            <label for="fecha"> fecha de reserva:</label>
+            <input type="date">
+            <!--menu desplegable para la fecha -->
+
+            <p>tipo de habitación :</p>
+            <!--boton radio para el tipo de habitacion -->
+            <input type="radio" id="html" name="tip-habitacion" value="simple">
+            <label for="simple">habitación simple</label><br>
+            <input type="radio" id="html" name="tip-habitacion" value="doble">
+            <label for="doble">habitación doble</label><br>
+            <input type="radio" id="html" name="tip-habitacion" value="matrimonio">
+            <label for="doble">habitación de matrimonio</label><br>
+            <!-- campo de seleccion multiple para desayuno, comida, cena o cama supletoria -->
+            <p>marque la que desee: </p>
+            <input type="checkbox" name="multimple" value="des">
+            <label for="des">desayuno</label><br>
+            <input type="checkbox" name="multimple" value="com">
+            <label for="com">comida</label><br>
+            <input type="checkbox" name="multimple" value="cena">
+            <label for="cena">cena</label><br>
+            <input type="checkbox" name="multimple" value="cama">
+            <label for="cama">cama supletoria</label><br>
+        </form>
+    </fieldset>
+
+</body>
+
+
+</html>

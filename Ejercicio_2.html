@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- Diseñar y codificar una página web personal -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> página personal</title>
+    <style>
+        .personales {
+            background-color: #A9E2F3
+        }
+
+        .academicos {
+            background-color: #A9E2F3
+        }
+
+        .legend {
+            text-align: center
+        }
+
+        body {
+            background-color: #F6D8CE
+        }
+
+        h1 {
+            text-align: center
+        }
+
+        .columnas {
+            display: inline-flex;
+        }
+
+        .columna {
+            margin: 20px;
+        }
+
+        .imagen {
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="columnas">
+        <!-- introducir la imagen pedida en el enunciado -->
+        <img src="./imagenes/pedro.jpg" alt="pedro" class="imagen">
+        <div class="columna">
+            <h1> Pedro Francisco Duque Duque </h1>
+            <fieldset class="personales">
+                <legend class="legend"> Datos personales </legend><!-- lista para datos personales -->
+                <ul>
+                    <li> nombre completo: Pedro Francisco Duque Duque </li>
+                    <li> teléfono de contacto: 000000000 </li>
+                    <li> correo electronico: pedroduque@astronauta.com </li>
+                    <ul>
+            </fieldset>
+        </div>
+
+    </div>
+    <p></p>
+
+    <fieldset class="academicos">
+        <legend class="legend"> Datos académicos </legend>
+        <table>
+            <caption> formacion preuniversitaria</caption>
+            <tr>
+                <!-- primera linea de la tabla -->
+                <th>titulo</th>
+                <th>universidad</th>
+                <th>año</th>
+
+            </tr>
+            <tr>
+                <!-- segunda linea de la tabla  -->
+                <th>secundaria</th>
+                <th>ies azarquiel</th>
+                <th>1980</th>
+            </tr>
+            <tr>
+                <!-- tercera linea de la tabla  -->
+                <th>bachillerato</th>
+                <th>ies sefarad </th>
+                <th>1982 </th>
+            </tr>
+        </table>
+
+        <p></p>
+        <p></p>
+        <table>
+            <caption> formacion universitaria</caption>
+            <tr>
+                <!-- primera linea de la tabla -->
+                <th>titulo</th>
+                <th>universidad</th>
+                <th>año</th>
+
+            </tr>
+            <tr>
+                <!-- segunda linea de la tabla  -->
+                <th>grado </th>
+                <th><a href="https://www.uclm.es/">uclm</a></th>
+                <th>1987</th>
+
+            </tr>
+            <tr>
+                <!-- tercera linea de la tabla  -->
+                <th>master</th>
+                <th><a href="https://www.upm.es/">upm</a> </th>
+                <th>1992</th>
+                <th></th>
+            </tr>
+        </table>
+    </fieldset>
+</body>
+
+</html>
